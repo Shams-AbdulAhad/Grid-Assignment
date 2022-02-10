@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .Grid{
+        display:grid;
+        grid-template-columns:repeat(3,auto);
+        border: 1px black solid;
+        grid-column-gap:25px ;
+        background-color: aquamarine;
+    }
+    .item{
+        border: 1px black solid;
+        background-color: blueviolet;
+        padding: 2%;
+        text-align: center;
+    }
+    .two{
+        grid-column: span 2;
+        
+    }
+    .sponsor{
+        grid-column: span 3;
+        
+    }
+    .footer{
+        grid-column: span 3;
+       
+    }
+    .main{
+        grid-column: span 2;
+        padding: 30%;
+
+    }
+</style>
+
+
+
+
+<body>
+    <div class="Grid">
+       
+        <h1 class="item ">Logo</h1>
+        <h1 class="item two">Menu</h1>
+        <h1 class="item main">Main</h1>
+        <h1 class="item ">Aside</h1>
+        <h1 class="item sponsor">Sponsor</h1>
+        <h1 class="item footer">Footer</h1>
+       
+    </div>
+</body>
+</html>
